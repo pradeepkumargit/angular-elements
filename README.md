@@ -29,7 +29,13 @@
 npm install fs-extra concat
 
 ```
-4. In your root application, create build script file, angular-element-build.js
+4. Build your angular application using below command:
+
+```js
+ng build --prod --output-hashing=none
+
+```
+5. In your root application, create build script file, angular-element-build.js
 
 ```js
 const fs = require('fs-extra');
@@ -46,6 +52,28 @@ const concat  = require('concat');
     await concat(files,'angular-elements/hello-world-angular-element.js')
 })()
 ```
+
+6. In package json add below script
+
+```js
+"scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build:angular-elements": "ng build --prod --output-hashing=none && node angular-elements-build.js"
+  },
+
+```
+7. Now run below command in your gitbase.
+
+```js
+npm run build:angular-elements
+```
+Above command will create a angular-elements folder and hello-world-angular-element.js file inside in your root apllication 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
 ## Development server
