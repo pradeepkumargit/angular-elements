@@ -1,4 +1,4 @@
-# Angular App Using Angular Elements
+# Angular Elements
 
 ## Steps to create and use Angular Elements
 1. creat one Hello World Component
@@ -72,7 +72,34 @@ const concat  = require('concat');
 ```js
 npm run build:angular-elements
 ```
-Above command will create a angular-elements folder and hello-world-angular-element.js file inside in your root apllication 
+Above command will create a angular-elements folder and hello-world-angular-element.js file inside in angular-elements folder
+
+8. Add index.html file with below code
+```html
+<html>
+    <title>Hello World Angular Elements</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <app-hello-world></app-hello-world>
+    <script src="./hello-world-angular-element.js"></script>
+</body>
+</html>
+```
+9. Install live Server using below command
+
+```js
+npm install -g live-server
+
+```
+10. Navigate to your angular-element folder and run below command
+```js
+npx live-server
+```
+your browser will open new broser window on  below url and you can see Hello World Component us running as Angular element in your application.
+
+http://localhost:8080/
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
