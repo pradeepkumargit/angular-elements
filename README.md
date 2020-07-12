@@ -2,19 +2,26 @@
 
 ## Steps to create and use Angular Elements
 1. creat one Hello World Component
-2. Update app.module.st files 
+2. Update app.module.ts files 
+  a.import createCustomElement
 ```js
-  a. import { createCustomElement } from '@angular/elements';
+   import { createCustomElement } from '@angular/elements';
 ```
+  b. Add Entry component in NgModule
 ```js
-  b. Add Entry component in NgModule - entryComponents:[HelloWorldComponent]
+   entryComponents:[HelloWorldComponent]
 ```
-  c. Add Constrcutor in App Module:
+  c. Add Constrcutor in App Module
+```js
     constructor(injector: Injector) {
     const custom = createCustomElement(HelloWorldComponent, {injector: injector});
     customElements.define('app-hello-world', custom);
    }
-  d. Manual bootstrapping your application using ngDoBootstrap() {}
+```
+  d. Manual bootstrapping your application using ngDoBootstrap
+```js
+     ngDoBootstrap() {}
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
