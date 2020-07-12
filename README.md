@@ -1,4 +1,16 @@
-# AngularAppUsingAngularElements
+# Angular App Using Angular Elements
+
+# Steps to create and use Angular Elements
+1. creat one Hello World Component
+2. Update app.module.st files 
+  a. import { createCustomElement } from '@angular/elements';
+  b. Add Entry component in NgModule - entryComponents:[HelloWorldComponent]
+  c. Add Constrcutor in App Module:
+    constructor(injector: Injector) {
+    const custom = createCustomElement(HelloWorldComponent, {injector: injector});
+    customElements.define('app-hello-world', custom);
+   }
+  d. Manual bootstrapping your application using ngDoBootstrap() {}
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
