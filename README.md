@@ -23,7 +23,13 @@
 ```js
      ngDoBootstrap() {}
 ```
+3. Install dependencies for build script of Angular Elements
 
+```bash
+# NPM
+npm install fs-extra concat
+
+```
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
 ## Development server
