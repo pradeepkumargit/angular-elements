@@ -3,6 +3,7 @@
 ## Steps to create and use Angular Elements
 1. creat one Hello World Component
 2. Update app.module.ts files 
+
   a.import createCustomElement
 ```js
    import { createCustomElement } from '@angular/elements';
@@ -11,7 +12,7 @@
 ```js
    entryComponents:[HelloWorldComponent]
 ```
-  c. Add Constrcutor in App Module
+  c. Add constructor in App Module
 ```js
     constructor(injector: Injector) {
     const custom = createCustomElement(HelloWorldComponent, {injector: injector});
