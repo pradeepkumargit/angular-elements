@@ -1,8 +1,8 @@
 # Angular Elements
 
 ## Steps to create and use Angular Elements
-1. creat one Hello World Component
-2. Update app.module.ts files 
+1. creat one Hello World Component in src/app folder
+2. Update app.module.ts file
 
   a.import createCustomElement
 ```js
@@ -35,7 +35,7 @@ npm install fs-extra concat
 ng build --prod --output-hashing=none
 
 ```
-5. In your root application, create build script file, angular-element-build.js
+5. In your root application, create build script file and ad below code, angular-element-build.js
 
 ```js
 const fs = require('fs-extra');
@@ -53,7 +53,7 @@ const concat  = require('concat');
 })()
 ```
 
-6. In package json add below script
+6. In package json add below script:
 
 ```js
 "scripts": {
@@ -74,7 +74,7 @@ npm run build:angular-elements
 ```
 Above command will create a angular-elements folder and hello-world-angular-element.js file inside in angular-elements folder
 
-8. Add index.html file with below code
+8. Add index.html file with below code:
 ```html
 <html>
     <title>Hello World Angular Elements</title>
@@ -85,13 +85,13 @@ Above command will create a angular-elements folder and hello-world-angular-elem
 </body>
 </html>
 ```
-9. Install live Server using below command
+9. Install live server using below command:
 
 ```js
 npm install -g live-server
 
 ```
-10. Navigate to your angular-element folder and run below command
+10. Navigate to your angular-element folder and run below command:
 ```js
 npx live-server
 ```
