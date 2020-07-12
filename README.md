@@ -95,7 +95,7 @@ npm install -g live-server
 ```js
 npx live-server
 ```
-new browser window will open in below url and you can see Hello World Component us running as Angular element in your application.
+new browser window will open in below url and you can see Hello World Component is running as Angular element in your application.
 
 http://localhost:8080/
 
