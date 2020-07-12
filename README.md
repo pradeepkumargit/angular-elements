@@ -26,9 +26,25 @@
 3. Install dependencies for build script of Angular Elements
 
 ```bash
-# NPM
 npm install fs-extra concat
 
+```
+4. In your root application, create build script file, angular-element-build.js
+
+```js
+const fs = require('fs-extra');
+const concat  = require('concat');
+
+(async function build() {
+    const files = [
+        './dist/angular-app-using-angular-elements/runtime.js',
+        './dist/angular-app-using-angular-elements/polyfills.js',
+        './dist/angular-app-using-angular-elements/scripts.js',
+        './dist/angular-app-using-angular-elements/main.js',
+    ]
+    await fs.ensureDir('angular-elements')
+    await concat(files,'angular-elements/hello-world-angular-element.js')
+})()
 ```
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
