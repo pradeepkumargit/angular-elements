@@ -53,7 +53,7 @@ const concat  = require('concat');
 })()
 ```
 
-6. In package json add below script:
+6. In package.json add below script:
 
 ```js
 "scripts": {
