@@ -35,7 +35,7 @@ npm install fs-extra concat
 ng build --prod --output-hashing=none
 
 ```
-5. In your root application, create build script file and ad below code, angular-element-build.js
+5. In your root application, create build script file and add below code, angular-element-build.js
 
 ```js
 const fs = require('fs-extra');
