@@ -74,7 +74,7 @@ npm run build:angular-elements
 ```
 Above command will create a angular-elements folder and hello-world-angular-element.js file inside in angular-elements folder
 
-8. Add index.html file with below code:
+8. Add index.html file in angular-elements folder with below code:
 ```html
 <html>
     <title>Hello World Angular Elements</title>
