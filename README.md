@@ -1,7 +1,7 @@
 # Angular Elements
 
 ## Steps to create and use Angular Elements
-1. creat one Hello World Component in src/app folder
+1. create one Hello World Component in src/app folder
 2. Update app.module.ts file
 
   a.import createCustomElement
